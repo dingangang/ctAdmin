@@ -1,0 +1,96 @@
+// element 样式补丁
+
+.el-card {
+  &.is-always-shadow {
+    box-shadow: 0 0 8px 0 rgba(232, 237, 250, .6), 0 2px 4px 0 rgba(232, 237, 250, .5);
+  }
+
+  &.is-hover-shadow {
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(232, 237, 250, .6), 0 2px 4px 0 rgba(232, 237, 250, .5);
+    }
+  }
+}
+
+.d2-container-full__body {
+  padding: 10px !important;
+}
+
+.el-table th.has-filter:hover .has-filter-label::after {
+  -webkit-transform: rotate(180deg);
+  content: "\E605";
+  display: inline-block;
+  height: 100%;
+  transform: rotate(180deg);
+  font-family: element-icons !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.el-table-filter__list {
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  min-width: 100px;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.d2-container-full__header {
+  padding: 10px 20px !important;
+}
+
+.search-from .el-form-item {
+  margin-bottom: 0;
+}
+
+.el-table-filter {
+  z-index: 1000 !important;
+}
+
+.ct-custom-search {
+  p {
+    line-height: 34px;
+    font-size: 20px;
+    margin: 0;
+
+    i {
+      font-size: 20px;
+      vertical-align: baseline;
+      margin-left: 5px;
+      color: #79c31a;
+
+      &:hover {
+        cursor: pointer;
+        color: #a2ee1a;
+      }
+    }
+  }
+
+  .el-icon-error {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #e10000;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      color: #f00;
+    }
+  }
+}
+
+.ct-custom-form {
+  text-align: center;
+}
+
